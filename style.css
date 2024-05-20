@@ -1,0 +1,92 @@
+body{
+    margin-top: 30px;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+button{
+    
+    font-size: 2em;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 0%;
+    border: none;
+    text-align: center;
+    background-color:hwb(0 31% 69%);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    outline: none;
+   box-shadow: 5px 5px 10px white;
+
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+   
+}
+.calcu{
+    background-color: black;
+    border-radius: 20px;
+    max-width: 400px;
+    box-sizing:content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 20px 20px 10px rgb(93, 92, 92);
+}
+.display{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    border: none;
+    background-color: burlywood;
+    border-radius: 20px 20px 0 0;
+    color:black;
+    font-weight: bold;
+    text-align:left;
+    font-size: 2em;
+    outline: none;
+    box-shadow: inset 5px 5px 10px rgb(93, 92, 92);
+    
+}
+button:hover{
+    background-color: hsl(0, 0%, 50%);
+}
+
+.opera{
+    background-color:orange;
+}
+.opera:hover{
+    background-color:hsl(39, 100%, 65%);
+}
+
+@media(max-width:666px){
+
+    button {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+
+    button:hover{
+    background-color:hwb(0 31% 69%);
+}
+.opera:hover{
+    background-color:orange;
+}
+
+button:active{
+    background-color: hsl(0, 0%, 50%); ;
+}
+.opera:hover{
+    background-color:hsl(39, 100%, 65%); ;
+}
+}
